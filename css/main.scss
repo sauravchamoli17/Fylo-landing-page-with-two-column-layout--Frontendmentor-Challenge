@@ -1,3 +1,52 @@
 @import 'mixins';
 @import 'keyframes';
 @import 'variables';
+*{
+    box-sizing:border-box;
+}
+html{
+    overflow-x:hidden;
+    font-size:17px;
+}
+body{
+   margin:0;
+   padding:0;
+}
+nav{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    margin-top:3em;
+    font-family:$raleway;
+    @include underline;
+    ul{
+        list-style-type:none;
+        display:flex;
+        order:2;
+        margin-left:auto;
+        padding:0;
+        li{
+            padding-left:3.5em;
+            a{
+                text-decoration:none;
+                color:hsl(0, 0%, 0%);
+            }
+        }
+    }
+}
+
+.First{
+    display:flex;
+    margin:0 auto;
+    width:90%;
+    justify-content: space-around;
+    .content{
+        align-self:center;
+        width:50%;
+    }
+   figure{
+       img{
+           max-width:100%;
+       }
+   }
+}
