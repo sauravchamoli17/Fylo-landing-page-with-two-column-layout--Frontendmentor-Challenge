@@ -11,6 +11,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background: url(../images/bg-curve-desktop.svg) no-repeat bottom;
+  background-size: 100%;
 }
 
 nav {
@@ -73,6 +75,7 @@ nav ul li a {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  margin-top: 2em;
   width: 90%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -82,10 +85,107 @@ nav ul li a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 50%;
+  font-family: "Raleway", sans-serif;
+}
+
+.First .content h1 {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.First .content p {
+  width: 90%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.First .content form {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.8em;
+}
+
+.First .content form .email {
+  width: 60%;
+  border: 1px solid #525252;
+  height: 2.3em;
+}
+
+.First .content form .email input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding: 8px 16px 8px 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.First .content form .email ::-webkit-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+.First .content form .email :-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+.First .content form .email ::-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+.First .content form .email ::placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+.First .content form .get_started {
+  width: 35%;
+  margin-left: 5%;
+  background-color: #3065f8;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.First .content form .get_started:hover {
+  opacity: 0.9;
+}
+
+.First figure {
+  margin-right: 0;
 }
 
 .First figure img {
+  max-width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+main::before {
+  content: "";
+  background: url("../images/bg-curve-desktop.svg") no-repeat top;
+  background-size: 100%;
+}
+
+.Second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10em;
+}
+
+.Second figure {
+  margin-right: 0;
+}
+
+.Second figure img {
   max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
