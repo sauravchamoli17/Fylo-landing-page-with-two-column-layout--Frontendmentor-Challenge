@@ -89,7 +89,7 @@ nav ul li a {
 }
 
 .First .content h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 2.8rem;
 }
 
@@ -166,7 +166,7 @@ main {
   width: 100%;
 }
 
-main::before {
+main:before {
   content: "";
   background: url("../images/bg-curve-desktop.svg") no-repeat top;
   background-size: 100%;
@@ -187,5 +187,40 @@ main::before {
 
 .Second figure img {
   max-width: 100%;
+}
+
+.Second h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+.Second p {
+  width: 90%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Second a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #3c9f8f;
+}
+
+.Second a img {
+  padding-left: 0.5em;
+}
+
+.Second .testimonal_card {
+  margin-top: 1.5em;
+  width: 60%;
+  background: #f6f6fe;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 6px;
+  padding: 10px 20px 10px 20px;
 }
 /*# sourceMappingURL=main.css.map */

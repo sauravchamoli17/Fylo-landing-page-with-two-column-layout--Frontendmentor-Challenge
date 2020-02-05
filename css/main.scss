@@ -47,7 +47,7 @@ nav{
         align-self:center;
         font-family:$raleway;
         h1{
-            font-size:1.8rem;
+            font-size:2rem;
             line-height:2.8rem;
         }
         p{
@@ -98,19 +98,46 @@ nav{
 // Main Container 
 main{
     width:100%;
-    &::before{
+    &:before{
         content:"";
         background: url("../images/bg-curve-desktop.svg") no-repeat top;
         background-size: 100%;
     }
 }
 
+// Second Section 
 .Second{
     display:flex;
     width:90%;
     margin:0 auto;
     padding-top:10em;
     @include illustration;
+    h1{
+        font-family:$raleway;
+        font-size:2rem;
+        line-height:2.8rem;
+    }
+    p{
+        width:90%;
+        font-family:$opensans;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        text-decoration:none;
+        color:$moderatecyan;
+        img{
+            padding-left:0.5em;
+        }
+    }
+.testimonal_card{
+margin-top:1.5em;
+width:60%;
+background:$lightgrayishblue;
+font-family:$opensans;
+border-radius:6px;
+padding:10px 20px 10px 20px;
+}
 }
 
       
