@@ -264,6 +264,11 @@ footer{
     justify-content:space-between;
     flex-direction:column;
     padding:0;
+    .details{
+        align-self:flex-start;
+        display:inline-flex;
+        flex-direction: column;
+    }
     a{
         display:inline-flex;
         align-items: center;
@@ -277,3 +282,38 @@ footer{
     }
 }
 
+// Footer Links 
+.links{
+    display:flex;
+    width:50%;
+    justify-content:center;
+    @include underline($white);
+    ul{
+        list-style-type: none;
+        margin-bottom:0;
+        li{
+            padding-bottom:1em;
+        }
+        a{
+            font-family:$opensans;
+            text-decoration:none;
+            color:$white;
+        }
+    }
+    .second{
+        padding-left:10em;
+    }
+}
+
+// Social Media Icons
+.socialmedia{
+    padding-top:1em;
+    a{
+        border:1px solid $white;
+        border-radius:50%;
+        margin-left:1em;
+        color:$white;
+        text-decoration:none;
+        padding:0.4em 0.4em 0.4em 0.4em
+    }    
+}

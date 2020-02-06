@@ -457,6 +457,18 @@ footer .footer_content {
   transition: all 0.2s ease-in-out;
 }
 
+.contact .details {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .contact a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -472,5 +484,71 @@ footer .footer_content {
 
 .contact a img {
   padding-right: 0.8em;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.links .underline {
+  position: relative;
+}
+
+.links .underline:before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  margin: 15px 0px 0px;
+  opacity: 0;
+  background-color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.links .underline:hover:before {
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.links ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.links ul li {
+  padding-bottom: 1em;
+}
+
+.links ul a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.links .second {
+  padding-left: 10em;
+}
+
+.socialmedia {
+  padding-top: 1em;
+}
+
+.socialmedia a {
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 1em;
+  color: white;
+  text-decoration: none;
+  padding: 0.4em 0.4em 0.4em 0.4em;
 }
 /*# sourceMappingURL=main.css.map */
