@@ -236,3 +236,44 @@ main{
    }
  }
 }
+
+// Footer 
+footer{
+    display:flex;
+    flex-direction:column;
+    padding:4em 3em 0em 4.5em;
+    background-color:$verydarkblue;
+    .footer_content{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:80%;
+        // padding:2em 1em 2em 1em;
+    }
+}
+// Hyperlinks Container 
+.hyperlinks{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+}
+// Contact 
+.contact{
+    @include underline($white);
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    padding:0;
+    a{
+        display:inline-flex;
+        align-items: center;
+        text-decoration:none;
+        color:$white;
+        padding-top:1em;
+        font-family:$opensans;
+        img{
+            padding-right:0.8em;
+        }
+    }
+}
+
