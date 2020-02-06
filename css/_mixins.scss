@@ -1,5 +1,5 @@
 // Underline Animation
-@mixin underline{
+@mixin underline($color:hsl(0,0%,0%)){
     .underline{
     position:relative;
    &:before{
@@ -10,7 +10,7 @@
     height:2px;
     margin:15px 0px 0px;
     opacity:0;
-    background-color:hsl(0,0%,0%);
+    background-color:$color;
     transition:all 0.2s ease-in-out;
   }
     &:hover{
@@ -19,10 +19,11 @@
           opacity:1;
           transition:all 0.2s ease-in-out;
       }
-  }
-} 
+   }
+ } 
 }
 
+// Illustration Image 
 @mixin illustration{
  figure{
       margin-right:0;

@@ -189,6 +189,30 @@ main:before {
   max-width: 100%;
 }
 
+.Second .underline {
+  position: relative;
+}
+
+.Second .underline:before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  margin: 15px 0px 0px;
+  opacity: 0;
+  background-color: #3c9f8f;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.Second .underline:hover:before {
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 .Second h1 {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
@@ -201,9 +225,9 @@ main:before {
 }
 
 .Second a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -215,12 +239,63 @@ main:before {
   padding-left: 0.5em;
 }
 
-.Second .testimonal_card {
+.testimonal_card {
   margin-top: 1.5em;
-  width: 60%;
-  background: #f6f6fe;
+  width: 65%;
+  background: white;
   font-family: "Open Sans", sans-serif;
   border-radius: 6px;
-  padding: 10px 20px 10px 20px;
+  padding: 1.5em 0em 1.5em 1em;
+  -webkit-box-shadow: 0.2em 0.4em 0.8em #bfbfbf;
+          box-shadow: 0.2em 0.4em 0.8em #bfbfbf;
+}
+
+.testimonal_card p {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1em;
+}
+
+.author img {
+  border-radius: 50%;
+  width: 10%;
+  height: 10%;
+}
+
+.authorname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0.4em;
+}
+
+.authorname h2 {
+  font-size: 0.8rem;
+  margin: 0.1em 0em 0.1em 0em;
+}
+
+.authorname span {
+  font-size: 0.6rem;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.getaccess_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3em 2em 3em 2em;
+  background-color: #070439;
 }
 /*# sourceMappingURL=main.css.map */
