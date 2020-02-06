@@ -295,7 +295,91 @@ main:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3em 2em 3em 2em;
-  background-color: #070439;
+  margin-top: 6em;
+  padding: 4em 6em 4em 4em;
+  background-color: #585989;
+  color: white;
+}
+
+.left {
+  width: 40%;
+}
+
+.left h1 {
+  font-family: "Raleway", sans-serif;
+  margin: 0em 0em 0.6em 0em;
+}
+
+.left p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  margin: 0.2em 0em 0.2em 0em;
+  padding-right: 6em;
+}
+
+.getaccess_container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 30%;
+}
+
+.getaccess_container form .email {
+  border: 1px solid #525252;
+  height: 2.3em;
+  border-radius: 7px;
+}
+
+.getaccess_container form .email input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding: 8px 16px 8px 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.getaccess_container form .email ::-webkit-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+.getaccess_container form .email :-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+.getaccess_container form .email ::-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+.getaccess_container form .email ::placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+.getaccess_container form button {
+  width: 50%;
+  height: 2.8em;
+  margin-top: 1em;
+  background-color: #3065f8;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.getaccess_container form button:hover {
+  opacity: 0.9;
 }
 /*# sourceMappingURL=main.css.map */
