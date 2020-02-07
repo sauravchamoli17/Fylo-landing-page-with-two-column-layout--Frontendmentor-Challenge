@@ -1,3 +1,105 @@
+@-webkit-keyframes anim_logo {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes anim_logo {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes anim_links {
+  from {
+    opacity: 0;
+    position: relative;
+    left: -20px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes anim_links {
+  from {
+    opacity: 0;
+    position: relative;
+    left: -20px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes scale {
+  from {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes scale {
+  from {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@-webkit-keyframes image {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes image {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -68,6 +170,13 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: black;
+  -webkit-animation: anim_links 1.5s ease-in-out;
+          animation: anim_links 1.5s ease-in-out;
+}
+
+.anim_logo {
+  -webkit-animation: anim_logo 1.5s ease-in-out;
+          animation: anim_logo 1.5s ease-in-out;
 }
 
 .First {
@@ -75,7 +184,7 @@ nav ul li a {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  margin-top: 2em;
+  padding-top: 2em;
   width: 90%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -91,11 +200,15 @@ nav ul li a {
 .First .content h1 {
   font-size: 2rem;
   line-height: 2.8rem;
+  -webkit-animation: scale 1.5s ease-in-out;
+          animation: scale 1.5s ease-in-out;
 }
 
 .First .content p {
   width: 90%;
   font-family: "Open Sans", sans-serif;
+  -webkit-animation: scale 1.5s ease-in-out;
+          animation: scale 1.5s ease-in-out;
 }
 
 .First .content form {
@@ -104,6 +217,8 @@ nav ul li a {
   display: -ms-flexbox;
   display: flex;
   margin-top: 1.8em;
+  -webkit-animation: scale 1.5s ease-in-out;
+          animation: scale 1.5s ease-in-out;
 }
 
 .First .content form .email {
@@ -156,6 +271,8 @@ nav ul li a {
 
 .First figure {
   margin-right: 0;
+  -webkit-animation: image 1.5s ease-in-out;
+          animation: image 1.5s ease-in-out;
 }
 
 .First figure img {
@@ -183,6 +300,8 @@ main:before {
 
 .Second figure {
   margin-right: 0;
+  -webkit-animation: image 1.5s ease-in-out;
+          animation: image 1.5s ease-in-out;
 }
 
 .Second figure img {
@@ -406,7 +525,7 @@ footer .footer_content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 80%;
+  width: 85%;
 }
 
 .hyperlinks {
@@ -540,15 +659,37 @@ footer .footer_content {
 }
 
 .socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
   padding-top: 1em;
 }
 
-.socialmedia a {
-  border: 1px solid white;
+.socialmedia .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
   border-radius: 50%;
-  margin-left: 1em;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.socialmedia .icon:hover {
+  opacity: 0.8;
+}
+
+.socialmedia .icon a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: white;
-  text-decoration: none;
-  padding: 0.4em 0.4em 0.4em 0.4em;
 }
 /*# sourceMappingURL=main.css.map */

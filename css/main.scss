@@ -1,6 +1,7 @@
 @import 'mixins';
 @import 'keyframes';
 @import 'variables';
+@import 'media';
 *{
     box-sizing:border-box;
 }
@@ -32,15 +33,19 @@ nav{
             a{
                 text-decoration:none;
                 color:hsl(0, 0%, 0%);
+                animation: anim_links 1.5s ease-in-out;
             }
         }
     }
 }
-
+// Logo Animation 
+.anim_logo{
+    animation:anim_logo 1.5s ease-in-out;
+}
 .First{
     display:flex;
     margin:0 auto;
-    margin-top:2em;
+    padding-top:2em;
     width:90%;
     justify-content: space-around;
     .content{
@@ -49,15 +54,18 @@ nav{
         h1{
             font-size:2rem;
             line-height:2.8rem;
+            animation:scale 1.5s ease-in-out;
         }
         p{
             width:90%;
             font-family:$opensans;
+            animation:scale 1.5s ease-in-out;
         }
         form{
             width:90%;
             display:flex;
             margin-top:1.8em;
+            animation:scale 1.5s ease-in-out;
             .email{
                 width:60%;
                 border:1px solid hsl(0, 0%, 32%);
@@ -93,6 +101,7 @@ nav{
            }
         @include illustration;
 }
+
 
 // First Section Closed 
 // Main Container 
@@ -247,7 +256,7 @@ footer{
         display:flex;
         flex-direction: column;
         justify-content: space-between;
-        width:80%;
+        width:85%;
         // padding:2em 1em 2em 1em;
     }
 }
@@ -307,13 +316,25 @@ footer{
 
 // Social Media Icons
 .socialmedia{
-    padding-top:1em;
-    a{
-        border:1px solid $white;
-        border-radius:50%;
-        margin-left:1em;
-        color:$white;
-        text-decoration:none;
-        padding:0.4em 0.4em 0.4em 0.4em
-    }    
+    display:flex;
+    width:20%;
+    padding-top: 1em;
+    .icon{
+        display: flex;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        margin-left: 10px;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        border: 1px solid rgb(255, 255, 255);
+        cursor: pointer;
+        &:hover{
+          opacity:0.8;
+        }
+        a{
+            align-self: center;
+            color: $white;
+        }
+    }  
 }
