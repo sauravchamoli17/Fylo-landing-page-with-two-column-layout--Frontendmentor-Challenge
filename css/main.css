@@ -172,11 +172,15 @@ nav ul li a {
   color: black;
   -webkit-animation: anim_links 1.5s ease-in-out;
           animation: anim_links 1.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .anim_logo {
   -webkit-animation: anim_logo 1.5s ease-in-out;
           animation: anim_logo 1.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .First {
@@ -202,6 +206,8 @@ nav ul li a {
   line-height: 2.8rem;
   -webkit-animation: scale 1.5s ease-in-out;
           animation: scale 1.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .First .content p {

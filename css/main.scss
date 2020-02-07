@@ -34,6 +34,7 @@ nav{
                 text-decoration:none;
                 color:hsl(0, 0%, 0%);
                 animation: anim_links 1.5s ease-in-out;
+                transition: all 0.2s ease-in-out;
             }
         }
     }
@@ -41,6 +42,7 @@ nav{
 // Logo Animation 
 .anim_logo{
     animation:anim_logo 1.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .First{
     display:flex;
@@ -55,6 +57,7 @@ nav{
             font-size:2rem;
             line-height:2.8rem;
             animation:scale 1.5s ease-in-out;
+            transition: all 0.2s ease-in-out;
         }
         p{
             width:90%;
