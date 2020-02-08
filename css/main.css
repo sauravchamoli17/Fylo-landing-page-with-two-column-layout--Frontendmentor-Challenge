@@ -1,8 +1,8 @@
 @-webkit-keyframes anim_logo {
   from {
     opacity: 0;
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
   }
   to {
     opacity: 1;
@@ -14,8 +14,8 @@
 @keyframes anim_logo {
   from {
     opacity: 0;
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
   }
   to {
     opacity: 1;
@@ -108,6 +108,7 @@
 html {
   overflow-x: hidden;
   font-size: 17px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -115,6 +116,7 @@ body {
   padding: 0;
   background: url(../images/bg-curve-desktop.svg) no-repeat bottom;
   background-size: 100%;
+  overflow-x: hidden;
 }
 
 nav {
@@ -172,15 +174,11 @@ nav ul li a {
   color: black;
   -webkit-animation: anim_links 1.5s ease-in-out;
           animation: anim_links 1.5s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
-.anim_logo {
+.nav_logo {
   -webkit-animation: anim_logo 1.5s ease-in-out;
           animation: anim_logo 1.5s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 .First {
@@ -206,8 +204,6 @@ nav ul li a {
   line-height: 2.8rem;
   -webkit-animation: scale 1.5s ease-in-out;
           animation: scale 1.5s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 .First .content p {
@@ -287,12 +283,10 @@ nav ul li a {
 
 main {
   width: 100%;
-}
-
-main:before {
-  content: "";
-  background: url("../images/bg-curve-desktop.svg") no-repeat top;
+  background: url("../images/bg-curve-desktop.svg") no-repeat center top;
   background-size: 100%;
+  padding: 0;
+  margin-top: 5em;
 }
 
 .Second {
@@ -301,7 +295,7 @@ main:before {
   display: flex;
   width: 90%;
   margin: 0 auto;
-  padding-top: 10em;
+  padding-top: 7em;
 }
 
 .Second figure {
@@ -420,7 +414,7 @@ main:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 6em;
+  margin-top: 8em;
   padding: 4em 6em 4em 4em;
   background-color: #585989;
   color: white;
@@ -490,7 +484,7 @@ main:before {
 }
 
 .getaccess_container form button {
-  width: 50%;
+  width: 55%;
   height: 2.8em;
   margin-top: 1em;
   background-color: #3065f8;
@@ -660,7 +654,7 @@ footer .footer_content {
   color: white;
 }
 
-.links .second {
+.links .second_list {
   padding-left: 10em;
 }
 
@@ -697,5 +691,116 @@ footer .footer_content {
       -ms-grid-row-align: center;
       align-self: center;
   color: white;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .First {
+    padding-top: 3em;
+  }
+  .First .content h1 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .First .content p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+  .nav_logo img {
+    width: 80%;
+  }
+  .Second {
+    width: 95%;
+  }
+  .Second h1 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .Second p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+  .Second a {
+    font-size: 0.9rem;
+  }
+  .testimonal_card {
+    width: 80%;
+  }
+  .getaccess_container {
+    padding: 3em 2em 3em 2em;
+  }
+  .left h1 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .left p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    padding: 0;
+  }
+  .getaccess_container form button {
+    width: 70%;
+  }
+  footer {
+    padding: 3em 1em 0em 3.5em;
+  }
+  footer .footer_content {
+    width: 95%;
+  }
+  .links {
+    width: 40%;
+  }
+  .links ul {
+    padding: 0;
+  }
+  .links .second_list {
+    padding-left: 4em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  nav {
+    width: 95%;
+    margin-top: 1.5em;
+  }
+  nav ul {
+    margin: 0.35em 0em 0em 1.6em;
+  }
+  nav ul li {
+    padding-left: 1.4em;
+  }
+  .underline {
+    font-size: 0.82rem;
+  }
+  .nav_logo {
+    width: 100px;
+    height: 30px;
+  }
+  .nav_logo img {
+    width: 100px;
+    height: 30px;
+  }
+  .First {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .First .content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .First .content h1 {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+  }
+  .First figure {
+    margin: 0;
+    margin-top: 2em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

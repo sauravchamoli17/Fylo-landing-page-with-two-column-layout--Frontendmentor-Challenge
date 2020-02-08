@@ -1,19 +1,20 @@
 @import 'mixins';
 @import 'keyframes';
 @import 'variables';
-@import 'media';
 *{
     box-sizing:border-box;
 }
 html{
     overflow-x:hidden;
     font-size:17px;
+    scroll-behavior: smooth;
 }
 body{
    margin:0;
    padding:0;
    background:url(../images/bg-curve-desktop.svg) no-repeat bottom;
    background-size:100%;
+   overflow-x:hidden;
 }
 nav{
     width:90%;
@@ -34,15 +35,13 @@ nav{
                 text-decoration:none;
                 color:hsl(0, 0%, 0%);
                 animation: anim_links 1.5s ease-in-out;
-                transition: all 0.2s ease-in-out;
             }
         }
     }
 }
 // Logo Animation 
-.anim_logo{
-    animation:anim_logo 1.5s ease-in-out;
-    transition: all 0.2s ease-in-out;
+.nav_logo{
+    animation: anim_logo 1.5s ease-in-out;
 }
 .First{
     display:flex;
@@ -57,7 +56,6 @@ nav{
             font-size:2rem;
             line-height:2.8rem;
             animation:scale 1.5s ease-in-out;
-            transition: all 0.2s ease-in-out;
         }
         p{
             width:90%;
@@ -110,11 +108,10 @@ nav{
 // Main Container 
 main{
     width:100%;
-    &:before{
-        content:"";
-        background: url("../images/bg-curve-desktop.svg") no-repeat top;
-        background-size: 100%;
-    }
+    background: url("../images/bg-curve-desktop.svg") no-repeat center top;
+    background-size: 100%;
+    padding:0;
+    margin-top:5em;
 }
 
 // Second Section 
@@ -124,7 +121,7 @@ main{
     display:flex;
     width:90%;
     margin:0 auto;
-    padding-top:10em;
+    padding-top:7em;
     h1{
         font-family:$raleway;
         font-size:2rem;
@@ -188,7 +185,7 @@ main{
 // Get Early Access Container 
 .getaccess_container{
     display:flex;
-    margin-top:6em;
+    margin-top:8em;
     padding:4em 6em 4em 4em;
     background-color:$desaturatedblue;
     color:$white;
@@ -231,7 +228,7 @@ main{
     }
    }
    button{
-   width:50%;
+   width:55%;
    height:2.8em;
    margin-top:1em;
    background-color:$brightblue;
@@ -312,7 +309,7 @@ footer{
             color:$white;
         }
     }
-    .second{
+    .second_list{
         padding-left:10em;
     }
 }
@@ -340,4 +337,120 @@ footer{
             color: $white;
         }
     }  
+}
+
+
+// Media Queries Ahead
+@media (min-width:768px) and (max-width:1024px){
+    .First{
+        padding-top:3em;
+    .content{
+        h1{
+            font-size:1.4rem;
+            line-height:2rem;
+        }
+        p{
+            font-size:0.9rem;
+            line-height:1.4rem;
+        }
+      }
+    }
+    .nav_logo img{
+        width:80%;
+    }
+    .Second{
+        width:95%;
+         h1{
+            font-size:1.4rem;
+            line-height:2rem;
+         }
+        p{
+            font-size:0.9rem;
+            line-height:1.4rem;
+        }
+        a{
+           font-size:0.9rem;
+        }
+    }
+    .testimonal_card{
+        width:80%;
+    }
+    .getaccess_container{
+        padding: 3em 2em 3em 2em;
+    }
+    .left{
+        h1{
+            font-size:1.4rem;
+            line-height:2rem;
+        }
+        p{
+           font-size:0.9rem;
+           line-height:1.4rem;
+           padding:0;
+        }
+    }
+    .getaccess_container form button{
+        width:70%;
+    }
+    footer{
+        padding:3em 1em 0em 3.5em;
+        .footer_content{
+            width:95%;
+        }
+    }
+    .links{
+      width:40%;
+    ul{
+      padding:0;
+     }
+    .second_list{
+      padding-left:4em;
+    }   
+   }
+}
+// Closed
+
+// Media Queries for Smartphones
+@media (min-width:320px) and (max-width:480px){
+    nav{
+        width:95%;
+         margin-top:1.5em;
+         ul{
+             margin:0.35em 0em 0em 1.6em;
+            li{
+                padding-left:1.4em;
+            }
+         }
+    }
+    .underline{
+        font-size:0.82rem;
+    }
+    .nav_logo{
+        width:100px;
+        height:30px;
+        img{
+        width:100px;
+        height:30px;
+        }
+    }
+    // First Section
+    .First{
+        flex-direction: column;
+        .content{
+            order:2;
+           h1{
+            font-size:1.5rem;
+            line-height:2.2rem;
+            text-align: center;
+            width:90%;
+            margin:0 auto;
+            margin-top:1.5em;
+           }
+        }
+        figure{
+            margin:0;
+            margin-top:2em;
+        }
+    }
+    // First Section COntent Styling
 }
