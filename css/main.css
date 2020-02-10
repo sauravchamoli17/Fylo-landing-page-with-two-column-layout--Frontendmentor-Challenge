@@ -347,7 +347,6 @@ main {
 .Second p {
   width: 90%;
   font-family: "Open Sans", sans-serif;
-  color: #bfbfbf;
 }
 
 .Second a {
@@ -359,7 +358,7 @@ main {
           align-items: center;
   text-decoration: none;
   color: #3c9f8f;
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .Second a img {
@@ -883,10 +882,89 @@ footer .footer_content {
   }
   .Second a {
     margin-top: 1.5em;
+    font-size: 0.95rem;
   }
   .testimonal_card {
     width: 100%;
     margin-top: 2.5em;
+    padding: 1.5em 1.1em 1em 1.1em;
+  }
+  .testimonal_card p {
+    color: black;
+    line-height: 1.5rem;
+  }
+  .getaccess_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2.5em 2.5em 6.5em 2.2em;
+  }
+  .getaccess_container .left {
+    width: 100%;
+  }
+  .getaccess_container .left h1 {
+    margin: 0;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .getaccess_container .left p {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1em;
+    text-align: center;
+    padding: 0;
+  }
+  .getaccess_container form {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+  }
+  .getaccess_container form .email {
+    width: 100%;
+  }
+  .getaccess_container form button {
+    width: 100%;
+  }
+  footer {
+    padding: 4em 0em 0em 2em;
+  }
+  footer .footer_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hyperlinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .links ul {
+    padding: 0;
+    padding-top: 1em;
+  }
+  .links .second_list {
+    padding: 0;
+    margin-top: 2.5em;
+  }
+  .socialmedia {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

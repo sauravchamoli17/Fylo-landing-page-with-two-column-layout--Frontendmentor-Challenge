@@ -133,14 +133,13 @@ main{
     p{
         width:90%;
         font-family:$opensans;
-        color:$lightgray;
     }
     a{
         display:inline-flex;
         align-items: center;
         text-decoration:none;
         color:$moderatecyan;
-        font-family:$raleway;
+        font-family:$opensans;
         img{
             padding-left:0.5em;
         }
@@ -519,11 +518,79 @@ footer{
         }
         a{
             margin-top:1.5em;
+            font-size:0.95rem;
         }
     }
     // Testimonial Card 
     .testimonal_card{
         width:100%;
         margin-top:2.5em;
+        padding: 1.5em 1.1em 1em 1.1em;
+        p{
+            color:$black;
+            line-height:1.5rem;
+        }
     }
+    // Get Early Access 
+    .getaccess_container{
+        flex-direction: column;
+        padding:2.5em 2.5em 6.5em 2.2em;
+        .left{
+            width:100%;
+            h1{
+                margin:0;
+                width:100%;
+                font-size:1.2rem;
+                text-align:center;
+            }
+            p{
+                width:85%;
+                margin:0 auto;
+                margin-top:1em;
+                text-align:center;
+                padding:0;
+            }
+        }
+        form{
+            width:80%;
+            margin:0 auto;
+            margin-top:1.5em;
+            .email{
+                width:100%;
+            }
+            button{
+                width:100%;
+            }
+        }
+    }
+    // Footer Styling for Smartphones 
+    footer{
+        padding:4em 0em 0em 2em;
+        .footer_content{
+            flex-direction: column;
+        }
+    }
+    .hyperlinks{
+        flex-direction: column;
+    }
+    .contact{
+        margin-top:1em;
+        margin-bottom:2em;
+    }
+    .links{
+        flex-direction: column;
+        ul{
+            padding: 0;
+            padding-top:1em;
+        }
+        .second_list{
+            padding:0;
+            margin-top:2.5em;
+        }
+    }
+    .socialmedia{
+        width:100%;
+        justify-content: center;
+    }
+
 }
