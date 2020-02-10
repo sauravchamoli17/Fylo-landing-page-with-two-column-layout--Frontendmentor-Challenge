@@ -8,6 +8,8 @@ Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
+[Check out the solution here](https://sauravchamoli17.github.io/Fylo-landing-page-with-two-column-layout--Frontendmentor-Challenge/)
+
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
 ## Where to find everything
