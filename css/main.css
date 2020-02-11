@@ -261,8 +261,8 @@ nav ul li a {
 }
 
 .First .content form .get_started {
-  width: 35%;
   margin-left: 5%;
+  width: 30%;
   background-color: #3065f8;
   border: none;
   outline: none;
@@ -339,7 +339,6 @@ main {
 }
 
 .Second h1 {
-  font-family: "Raleway", sans-serif;
   font-size: 2rem;
   line-height: 2.8rem;
 }
@@ -386,6 +385,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Raleway", sans-serif;
   padding-top: 1em;
 }
 
@@ -764,7 +764,7 @@ footer .footer_content {
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   nav {
     width: 100%;
     margin-top: 1.5em;
